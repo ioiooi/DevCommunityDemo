@@ -1,4 +1,6 @@
-﻿namespace DevCommunityDemo;
+﻿using DevCommunityDemo.Models;
+
+namespace DevCommunityDemo;
 
 public partial class MainPage : ContentPage
 {
@@ -12,6 +14,13 @@ public partial class MainPage : ContentPage
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
 		count++;
+
+
+		// Demo https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0007-ide0008
+		// not working
+		Person person = new Person();
+		bool isPerson = person is Person;
+
 
 		// Demo https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0071
 		// not working

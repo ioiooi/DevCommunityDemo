@@ -19,7 +19,10 @@ charset = utf-8
 [*.cs]
 dotnet_style_prefer_auto_properties = true:error
 dotnet_style_prefer_simplified_interpolation = true:suggestion
-csharp_style_var_when_type_is_apparent = true:suggestion
+
+csharp_style_var_for_built_in_types = true:error
+csharp_style_var_when_type_is_apparent = true:error
+csharp_style_var_elsewhere = true:error
 
 # Interfaces are prefixed by I and use PascalCase
 dotnet_naming_rule.interfaces_should_be_pascal_case_and_prefixed.severity = warning
