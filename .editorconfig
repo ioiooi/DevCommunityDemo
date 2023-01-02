@@ -1,0 +1,32 @@
+###############################
+# Core EditorConfig Options   #
+###############################
+
+# top-most EditorConfig file
+root = true
+
+# Code files
+[*.{cs,csx,vb,vbx}]
+indent_style = tab
+indent_size = 4
+insert_final_newline = true
+charset = utf-8
+
+###############################
+# Dev Community Demo          #
+###############################
+
+[*.cs]
+dotnet_style_prefer_auto_properties = true:error
+dotnet_style_prefer_simplified_interpolation = true:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion
+
+# Interfaces are prefixed by I and use PascalCase
+dotnet_naming_rule.interfaces_should_be_pascal_case_and_prefixed.severity = warning
+dotnet_naming_rule.interfaces_should_be_pascal_case_and_prefixed.symbols = interfaces
+dotnet_naming_rule.interfaces_should_be_pascal_case_and_prefixed.style = interfaces_style
+
+dotnet_naming_symbols.interfaces.applicable_kinds = interface
+
+dotnet_naming_style.interfaces_style.capitalization = pascal_case
+dotnet_naming_style.interfaces_style.required_prefix = I
